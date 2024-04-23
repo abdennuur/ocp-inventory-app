@@ -1,0 +1,25 @@
+<!-- templates/add_inventory_item.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Inventory Item</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Inventory Item</h1>
+        <form action="{{ url_for('add_inventory_item') }}" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="description">Description:</label><br>
+            <input type="text" id="description" name="description"><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,22 +1,19 @@
-<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Management System</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Inventory Management System</h1>
-        <div class="links">
-            <a href="{{ url_for('inventory') }}" class="btn btn-primary">Manage Inventory</a>
-            <a href="{{ url_for('orders') }}" class="btn btn-primary">Manage Orders</a>
-            <a href="{{ url_for('receipts') }}" class="btn btn-primary">Manage Receipts</a>
-            <a href="{{ url_for('shipments') }}" class="btn btn-primary">Manage Shipments</a>
-        </div>
-    </div>
+    <h1>Welcome to Inventory Management</h1>
+    <ul>
+        <li><a href="{{ url_for('articles') }}">Articles</a></li>
+        <li><a href="{{ url_for('commandes') }}">Commandes</a></li>
+        <li><a href="{{ url_for('inventaire') }}">Inventaire</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+    </ul>
 </body>
 </html>
 

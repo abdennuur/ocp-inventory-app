@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
+    <title>Commandes</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Articles</h1>
+    <h1>Commandes</h1>
     <ul>
-        {% for article in articles %}
-            <li>{{ article.nom }} - {{ article.description }} - {{ article.quantite }}</li>
+        {% for commande in commandes %}
+            <li>{{ commande.id }} - {{ commande.description }} - {{ commande.date }}</li>
         {% endfor %}
     </ul>
 </body>
